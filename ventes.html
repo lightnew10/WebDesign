@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v4.2.1
+* @link https://coreui.io
+* Copyright (c) 2022 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://coreui.io/license)
+-->
+<!-- Breadcrumb-->
+<html lang="fr">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+
+    <!--Titre de la page!-->
+    <title>
+      Mes ventes
+    </title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendors styles-->
+    <link rel="stylesheet" href="vendors/simplebar/css/simplebar.css">
+    <link rel="stylesheet" href="css/vendors/simplebar.css">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- We use those styles to show code examples, you should remove them in your application.-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link href="css/examples.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+    <script src="js/Include.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      // Shared ID
+      gtag('config', 'UA-118965717-3');
+      // Bootstrap ID
+      gtag('config', 'UA-118965717-5');
+    </script>
+  </head>
+
+  <body>
+    <div class="sidebar sidebar-dark sidebar-fixed" id="sidebar" w3-include-html="preset/side_bar_lateral.html"></div>
+
+    <div class="wrapper d-flex flex-column min-vh-100 bg-light" >
+      <div w3-include-html="preset/header.html"></div>
+
+      <div class="body flex-grow-1 px-3">
+        <div class="container-lg">
+
+          <!-- Contenue de la page!-->
+          <div>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <h1>Mes ventes</h1>
+                </div>
+                <div class="col-sm"></div>
+                <div class="col-sm"></div>
+                <div class="col-sm"></div>
+                <div class="col-sm">
+                  <div>
+                    <h6>Trier vos ventes
+                      <a>
+                        <svg class="nav-icon" width="30px" height="30px">
+                          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-sort-ascending"></use>
+                        </svg>
+                      </a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div>
+                <table class="table table-striped">
+                  <thead>
+                  <tr>
+                    <th scope="col">N° Commande
+                      <svg class="nav-icon" width="15px" height="15px">
+                      <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-arrow-thick-from-bottom"></use>
+                    </svg></th>
+                    <th scope="col">Nom client
+                      <svg class="nav-icon" width="15px" height="15px">
+                        <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-arrow-thick-from-left"></use>
+                      </svg></th>
+                    <th scope="col">Date de la vente
+                      <svg class="nav-icon" width="15px" height="15px">
+                        <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-arrow-thick-from-left"></use>
+                      </svg></th>
+                    <th scope="col">Montant de la vente
+                      <svg class="nav-icon" width="15px" height="15px">
+                        <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-arrow-thick-from-left"></use>
+                      </svg></th>
+                    <th scope="col">État de la vente
+                      <svg class="nav-icon" width="15px" height="15px">
+                        <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-arrow-thick-from-left"></use>
+                      </svg></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <th scope="row">4487621</th>
+                    <td>Robert Marshall</td>
+                    <td>18/07/2022</td>
+                    <td>$23 487,32</td>
+                    <td><span class="badge rounded-pill bg-success">Success</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4487632</th>
+                    <td>Frank Owen</td>
+                    <td>18/07/2022</td>
+                    <td>$10 877 634,87</td>
+                    <td><span class="badge rounded-pill bg-danger">En cours...</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4487648</th>
+                    <td>Sandra Toomer</td>
+                    <td>18/07/2022</td>
+                    <td>$4 653,21</td>
+                    <td><span class="badge rounded-pill bg-success">Success</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4487649</th>
+                    <td>Frank Owen</td>
+                    <td>18/07/2022</td>
+                    <td>$7 804,65</td>
+                    <td><span class="badge rounded-pill bg-success">Success</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4487651</th>
+                    <td>Anthony Harden</td>
+                    <td>20/07/2022</td>
+                    <td>$5 247 124,08</td>
+                    <td><span class="badge rounded-pill bg-success">Success</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4487670</th>
+                    <td>William Barwick</td>
+                    <td>29/07/2022</td>
+                    <td>$50 420,80</td>
+                    <td><span class="badge rounded-pill bg-danger">En cours...</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4487684</th>
+                    <td>Rodney Huskey</td>
+                    <td>03/08/2022</td>
+                    <td>$486 574,36</td>
+                    <td><span class="badge rounded-pill bg-success">Success</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4487692</th>
+                    <td>Clarissa Lynn</td>
+                    <td>12/09/2022</td>
+                    <td>$154 896,24</td>
+                    <td><span class="badge rounded-pill bg-danger">En cours...</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4487720</th>
+                    <td>Arthur Sabo</td>
+                    <td>28/09/2022</td>
+                    <td>$4 785,04</td>
+                    <td><span class="badge rounded-pill bg-success">Success</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4487754</th>
+                    <td>Janet Walker</td>
+                    <td>05/10/2022</td>
+                    <td>$2 500,00</td>
+                    <td><span class="badge rounded-pill bg-danger">En cours...</span></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div w3-include-html="preset/footer.html"></div>
+    </div>
+
+    <!-- CoreUI and necessary plugins-->
+    <script src="vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
+    <script src="vendors/simplebar/js/simplebar.min.js"></script>
+    <script>includeHTML();</script>
+
+  </body>
+</html>
