@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v4.2.1
+* @link https://coreui.io
+* Copyright (c) 2022 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://coreui.io/license)
+-->
+<!-- Breadcrumb-->
+<html lang="fr">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+
+    <!--Titre de la page!-->
+    <title>
+      CoreUI Free Bootstrap Admin Template
+    </title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendors styles-->
+    <link rel="stylesheet" href="vendors/simplebar/css/simplebar.css">
+    <link rel="stylesheet" href="css/vendors/simplebar.css">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- We use those styles to show code examples, you should remove them in your application.-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link href="css/examples.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+    <script src="js/Include.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      // Shared ID
+      gtag('config', 'UA-118965717-3');
+      // Bootstrap ID
+      gtag('config', 'UA-118965717-5');
+    </script>
+  </head>
+
+  <body>
+    <div class="sidebar sidebar-dark sidebar-fixed" id="sidebar" w3-include-html="preset/side_bar_lateral.html"></div>
+
+    <div class="wrapper d-flex flex-column min-vh-100 bg-light" >
+      <div w3-include-html="preset/header.html"></div>
+
+      <div class="body flex-grow-1 px-3">
+        <div class="container-lg">
+
+          <!-- Contenue de la page!-->
+          <nav class="navbar navbar-light bg-light">
+            <div class="dropdown" style="margin: 15px">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Trier les clients
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">
+                  <svg class="nav-icon" width="30px" height="30px">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-sort-alpha-down"></use>
+                  </svg></a></li></a>
+                </li>
+                <li><a class="dropdown-item" href="#">
+                  <svg class="nav-icon" width="30px" height="30px">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-sort-alpha-up"></use>
+                  </svg></a></li></a>
+                </li>
+                <li><a class="dropdown-item" href="#">
+                  <svg class="nav-icon" width="30px" height="30px">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-sort-ascending"></use>
+                  </svg></a></li></a>
+                </li>
+              </ul>
+            </div>
+            <div style="display: flex; justify-content: flex-end">
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Rechercher un client" aria-label="Search">
+              </form>
+              <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Recherche</button>
+            </div>
+          </nav>
+
+          <table class="table">
+            <thead class="thead-dark">
+            <tr>
+              <th scope="col">N° Client</th>
+              <th scope="col">Nbr de contrat</th>
+              <th scope="col">Nom</th>
+              <th scope="col">Numéro de téléphone</th>
+              <th scope="col">Email</th>
+              <th scope="col">Adresse</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th scope="row">452464</th>
+              <td>17</td>
+              <td>Irving Dye</td><td>307-789-4492</td><td>IrvingKDye@teleworm.us</td><td>2051 Archwood Avenue</td>
+            </tr>
+            <tr>
+              <th scope="row">452464</th>
+              <td>5</td>
+              <td>Rosie Blodgett</td><td>212-482-2686</td><td>RosieRBlodgett@teleworm.us</td><td>3724 Angus Road</td>
+            </tr>
+            <tr>
+              <th scope="row">452479</th>
+              <td>32</td>
+              <td>Clarence Farris</td><td>419-766-4999</td><td>ClarenceLFarris@armyspy.com</td><td>2567 Hill Street</td>
+            </tr>
+            <tr>
+              <th scope="row">454897</th>
+              <td>11</td>
+              <td>Henry Fisher</td><td>323-779-3278</td><td>HenryMFisher@dayrep.com</td><td>3066 Southside Lane</td>
+            </tr>
+            <tr>
+              <th scope="row">898558</th>
+              <td>37</td>
+              <td>Juan Hendrix</td><td>630-245-5151</td><td>JuanTHendrix@fleckens.hu</td><td>1878 Walkers Ridge Way</td>
+            </tr><tr>
+              <th scope="row">259184</th>
+              <td>03</td>
+              <td>James Calhoun</td><td>937-390-8036</td><td>JamesLCalhoun@gustr.com</td><td>3757 College Avenue</td>
+            </tr><tr>
+              <th scope="row">36225</th>
+              <td>25</td>
+              <td>Natalie Capps</td><td>912-690-7324</td><td>NatalieJCapps@gustr.com</td><td>110 Yorkie Lane</td>
+            </tr><tr>
+              <th scope="row">158485</th>
+              <td>8</td>
+              <td>Steven Roberts</td><td>805-221-3415</td><td>StevenDRoberts@dayrep.com</td><td>4500 Eden Drive</td>
+            </tr>
+            <tr>
+              <th scope="row">18847</th>
+              <td>14</td>
+              <td>Gary Conwell</td><td>978-345-4110</td><td>GaryEConwell@armyspy.com</td><td>4117 Hampton Meadows</td>
+            </tr>
+            <tr>
+              <th scope="row">2648736</th>
+              <td>04</td>
+              <td>Danielle Washington</td><td>609-335-3771</td><td>DanielleTWashington@fleckens.hu</td><td>3855 Lake Road</td>
+            </tr>
+            <tr>
+              <th scope="row">062518</th>
+              <td>01</td>
+              <td>Vernon Contreras</td><td>785-676-3423</td><td>VernonJContreras@rhyta.com</td><td>1703 Dog Hill Lane</td>
+            </tr>
+            <tr>
+              <th scope="row">484654</th>
+              <td>03</td>
+              <td>Timothy Rolland</td><td>409-543-2983</td><td>TimothyBRolland@gustr.com</td><td>570 Burwell Heights Road</td>
+            </tr>
+            </tbody>
+          </table>
+
+          <center style="margin: 15px"><button type="button" class="btn btn-primary btn-lg" style="width: 100%">Voir plus...</button></center>
+
+        </div>
+      </div>
+
+      <div w3-include-html="preset/footer.html"></div>
+    </div>
+
+    <!-- CoreUI and necessary plugins-->
+    <script src="vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
+    <script src="vendors/simplebar/js/simplebar.min.js"></script>
+    <script>includeHTML();</script>
+
+  </body>
+</html>
